@@ -216,10 +216,10 @@ body {
   margin: 2rem 0;
 }
 #features {
-  height: 100%;
+  position: relative;
 }
 #features .feature {
-  height: 60%;
+  height: 450px;
   position: relative;
 }
 #features .feature .feature__heading {
@@ -271,7 +271,7 @@ body {
   line-height: 3rem;
 }
 #features .feature__separate {
-  height: 15%;
+  height: 90px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -283,7 +283,8 @@ body {
   background: #464646;
 }
 #product-reviews {
-  height: 400px;
+  height: 600px;
+  position: relative;
 }
 #product-reviews .product-review {
   height: 40%;
