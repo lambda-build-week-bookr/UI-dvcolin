@@ -282,3 +282,9 @@ body {
   border: 1px solid #464646;
   background: #464646;
 }
+#product-reviews {
+  height: 400px;
+}
+#product-reviews .product-review {
+  height: 40%;
+}
