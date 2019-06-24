@@ -1,0 +1,52 @@
+#product-reviews {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    font-family: @main-font;
+
+    .product-reviews__heading {
+        font-family: @main-font;
+        color: @dark-gray;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .product-review {
+        height: 350px;
+        padding: 2.4rem;
+        position: relative;
+
+        .product-review__header {
+            .displayFlex(column, center, flex-start);
+            width: 50%;
+            height: 40%;
+            margin-left: auto;
+            margin-right: 1.6rem;
+            text-align: left;
+
+            .product-review__image {
+                position: absolute;
+                left: 2.4rem;
+                top: 2.4rem;
+            }
+
+            .product-review__name {
+                font-size: 2.4rem;
+            }
+
+            .product-review__subtitle {
+                font-size: 1.8rem;
+                margin: 1.6rem 0;
+            }
+        }
+
+        .product-review__description {
+            height: 60%;
+            padding: 2.4rem;
+            font-size: 1.6rem;
+            font-family: @main-font;
+            line-height: 2.5rem;
+        }
+    }
+
+}
