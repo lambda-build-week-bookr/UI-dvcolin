@@ -187,6 +187,9 @@ h2 {
   width: 85%;
   border-color: #464646;
 }
+.separate-60 {
+  height: 60px;
+}
 .navbar {
   width: 100%;
   height: 60px;
@@ -372,9 +375,6 @@ h2 {
 #product-reviews .product-reviews__container {
   border-left: 2px solid #F6950E;
   margin-left: 2.5rem;
-}
-.review-separate {
-  height: 60px;
 }
 #signUp-cta {
   height: 190px;
