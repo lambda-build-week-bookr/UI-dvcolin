@@ -31,6 +31,11 @@
   padding: 0 7%;
   line-height: 2.3rem;
 }
+@media (min-width: 992px) {
+  .info-description {
+    font-size: 1.5rem;
+  }
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -177,6 +182,8 @@ body {
 }
 h2 {
   font-size: 2rem;
+  font-family: 'lucida_grandebold', sans-serif;
+  color: #464646;
 }
 @media (min-width: 992px) {
   h2 {
@@ -403,7 +410,7 @@ h2 {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    padding: 0 3.2rem;
+    margin: 0 5%;
   }
 }
 @media (min-width: 992px) {
@@ -414,6 +421,7 @@ h2 {
     align-items: center;
     width: 100%;
     height: 60%;
+    margin-bottom: 1.5rem;
   }
 }
 #features .feature {
@@ -422,7 +430,7 @@ h2 {
 }
 @media (min-width: 992px) {
   #features .feature {
-    height: 350px;
+    height: 360px;
     width: 30%;
   }
 }
@@ -439,6 +447,11 @@ h2 {
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
+}
+@media (min-width: 992px) {
+  #features .feature .feature__heading {
+    font-size: 2.5rem;
+  }
 }
 #features .feature .feature__img {
   height: 63%;
@@ -472,6 +485,11 @@ h2 {
   padding: 0 7%;
   line-height: 2.3rem;
 }
+@media (min-width: 992px) {
+  #features .feature .feature__description {
+    font-size: 1.5rem;
+  }
+}
 #product-reviews {
   position: relative;
   width: 100%;
@@ -479,16 +497,24 @@ h2 {
   font-family: 'lucida_granderegular', sans-serif;
 }
 #product-reviews .product-reviews__heading {
-  font-family: 'lucida_grandebold', sans-serif;
-  color: #464646;
   width: 90%;
   margin: 0 auto;
   margin-bottom: 3rem;
-  font-size: 2.6rem;
+}
+@media (min-width: 992px) {
+  #product-reviews .product-reviews__heading {
+    margin-left: 5%;
+  }
 }
 #product-reviews .product-review {
   padding: 2rem;
   position: relative;
+}
+@media (min-width: 992px) {
+  #product-reviews .product-review {
+    width: 30%;
+    padding: 0;
+  }
 }
 #product-reviews .product-review .product-review__header {
   display: flex;
@@ -502,10 +528,25 @@ h2 {
   text-align: left;
   border-bottom: 2px solid rgba(70, 70, 70, 0.9);
 }
+@media (min-width: 992px) {
+  #product-reviews .product-review .product-review__header {
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+  }
+}
 #product-reviews .product-review .product-review__header .product-review__image {
   position: absolute;
   left: 2.4rem;
   top: 2.4rem;
+}
+@media (min-width: 992px) {
+  #product-reviews .product-review .product-review__header .product-review__image {
+    left: 0.5rem;
+    top: 0;
+  }
 }
 #product-reviews .product-review .product-review__header .product-review__name {
   font-size: 2.6rem;
@@ -514,6 +555,11 @@ h2 {
   font-size: 1.6rem;
   margin: 1.6rem 0;
   color: rgba(70, 70, 70, 0.9);
+}
+@media (min-width: 992px) {
+  #product-reviews .product-review .product-review__header .product-review__subtitle {
+    font-size: 1.5rem;
+  }
 }
 #product-reviews .product-review .product-review__description {
   height: 60%;
@@ -532,6 +578,17 @@ h2 {
   border-left: 2px solid #F6950E;
   margin-left: 2.5rem;
 }
+@media (min-width: 992px) {
+  #product-reviews .product-reviews__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border: none;
+    margin: 0 auto;
+    width: 90%;
+  }
+}
 #signUp-cta {
   height: 190px;
   color: white;
@@ -547,9 +604,30 @@ h2 {
   padding: 0 7%;
   line-height: 2.3rem;
 }
+@media (min-width: 992px) {
+  #signUp-cta {
+    font-size: 1.5rem;
+  }
+}
+@media (min-width: 992px) {
+  #signUp-cta {
+    height: 220px;
+  }
+  #signUp-cta .cta__button {
+    font-size: 2.8rem;
+    padding: 1rem 2rem;
+  }
+}
 #signUp-cta p {
   margin-bottom: auto;
   margin-top: 3.5rem;
+}
+@media (min-width: 992px) {
+  #signUp-cta p {
+    font-size: 3rem;
+    width: 80%;
+    line-height: 3.7rem;
+  }
 }
 #footer {
   width: 90%;

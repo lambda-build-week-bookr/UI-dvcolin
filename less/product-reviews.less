@@ -5,17 +5,23 @@
     font-family: @main-font;
 
     .product-reviews__heading {
-        font-family: @font-bold;
-        color: @dark-gray;
         width: 90%;
         margin: 0 auto;
         margin-bottom: 3rem;
-        font-size: 2.6rem;
+
+        @media @desktop {
+            margin-left: 5%;
+        }
     }
 
     .product-review {
         padding: 2rem;
         position: relative;
+
+        @media @desktop {
+            width: 30%;
+            padding: 0;
+        }
 
         .product-review__header {
             .displayFlex(column, flex-end, flex-start);
@@ -26,10 +32,20 @@
             text-align: left;
             border-bottom: 2px solid @text-light-gray;
 
+            @media @desktop {
+                text-align: right;
+                .displayFlex(column, flex-end, flex-end);
+            }
+
             .product-review__image {
                 position: absolute;
                 left: 2.4rem;
                 top: 2.4rem;
+
+                @media @desktop {
+                    left: 0.5rem;
+                    top: 0;
+                }
             }
 
             .product-review__name {
@@ -40,6 +56,10 @@
                 font-size: 1.6rem;
                 margin: 1.6rem 0;
                 color: @text-light-gray;
+
+                @media @desktop {
+                    font-size: 1.5rem;
+                }
             }
         }
 
@@ -70,6 +90,13 @@
     .product-reviews__container {
         border-left: 2px solid @orange;
         margin-left: 2.5rem;
+
+        @media @desktop {
+            .displayFlex(row, space-between);
+            border: none;
+            margin: 0 auto;
+            width: 90%;
+        }
     }
 
 }
