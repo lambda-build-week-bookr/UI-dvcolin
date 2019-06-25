@@ -209,7 +209,7 @@ h2 {
   align-items: center;
   color: white;
   font-family: 'lucida_granderegular', sans-serif;
-  background: rgba(6, 58, 101, 0.6);
+  background-image: linear-gradient(rgba(6, 58, 101, 0.9), rgba(0, 0, 0, 0));
   position: absolute;
   top: 0;
   left: 0;
@@ -279,7 +279,7 @@ h2 {
   position: relative;
 }
 #features .feature .feature__heading {
-  background: rgba(6, 58, 101, 0.3);
+  background-image: linear-gradient(rgba(6, 58, 101, 0.9), rgba(0, 0, 0, 0));
   color: white;
   height: 13%;
   width: 100%;
