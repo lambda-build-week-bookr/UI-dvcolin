@@ -1,6 +1,10 @@
 #landing {
     height: 100%;
 
+    @media @desktop {
+        height: 130%;
+    }
+
     .landing__image {
         height: 55%;
         background: url(../images/landing.jpg);
@@ -8,23 +12,43 @@
         background-position: 0% 20%;
         position: relative;
 
+        @media @desktop {
+            height: 65%;
+            background-position: 0 35%;
+        }
+
         .landing__image-text {
             position: absolute;
             top: 40%;
             left: 4%;
             color: white;
+            width: 35%;
+
+            @media @desktop {
+                // left: 10%;
+            }
             
 
             .landing__image-heading {
                 font-size: 3rem;
                 line-height: 3.5rem;
                 font-family: @font-bold;
+
+                @media @desktop {
+                    font-size: 4.5rem;
+                    line-height: 5rem;
+                }
             }
 
             .landing__image-subtitle {
                 font-size: 1.7rem;
                 line-height: 2rem;
                 margin-top: 1.5rem;
+
+                @media @desktop {
+                    font-size: 2.2rem;
+                    line-height: 2.8rem;
+                }
             }
         }
 
@@ -34,6 +58,13 @@
             right: 12%;
             padding: 1rem 1.4rem;
             border-radius: 10px;
+
+            @media @desktop {
+                padding: 1.5rem 3.2rem;
+                font-size: 3rem;
+                right: 15%;
+                bottom: 10%;
+            }
         }
     }
 
@@ -43,18 +74,32 @@
         padding: 1.6rem;
         text-align: center;
 
+        @media @desktop {
+            height: 35%;
+            padding: 2.4rem;
+        }
+
         .landing__description-text {
             height: 95%;
             .displayFlex(column);
             border-top: 1px solid black;
             border-bottom: 1px solid black;
             padding-top: 2rem;
+
+            @media @desktop {
+                width: 85%;
+            }
             
             .landing__description-heading {
                 line-height: 3.5rem;
                 font-family: @font-bold;
                 font-weight: 600;
                 color: @text-light-gray;
+
+                @media @desktop {
+                    width: 90%;
+                    line-height: 5rem;
+                }
             }
 
             .landing__description-p {
@@ -63,6 +108,12 @@
                 padding: 0 2.4rem;
                 margin: 2rem 0;
                 color: black;
+
+                @media @desktop {
+                    font-size: 2.5rem;
+                    width: 90%;
+                    line-height: 3.2rem;
+                }
             }
         }
     }

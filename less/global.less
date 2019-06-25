@@ -11,12 +11,19 @@ html,
 body {
     height: 100%;
     width: 100%;
-    background: @bg-light;
     font-family: 'lucida_granderegular', sans-serif;
+}
+
+body {
+    background: @bg-light;
 }
 
 h2 {
     font-size: 2rem;
+
+    @media @desktop {
+        font-size: 3.4rem;
+    }
 }
 
 .cta__button {
