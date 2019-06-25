@@ -1,0 +1,40 @@
+#footer {
+    width: 90%;
+    margin: 0 auto;
+    .displayFlex(row, flex-start);
+
+    .footer-left {
+        width: 50%;
+        .displayFlex(column, center, flex-start);
+
+        .footer__icons {
+            width: 95%;
+            .displayFlex(row, space-between);
+            i {
+                font-size: 2.6rem;
+                color: black;
+            }
+        }
+
+        .footer__copyright {
+            font-size: 1.6rem;
+            margin: 1.5rem 0;
+            color: @text-light-gray;
+        }
+    }
+
+    .footer-right {
+        width: 50%;
+        .displayFlex(column, center, flex-end);
+        
+        a {
+            color: @text-light-gray;
+            text-decoration: none;
+            font-size: 1.6rem;
+        }
+
+        .privacy-policy {
+            margin: 1rem 0;
+        }
+    }
+}
