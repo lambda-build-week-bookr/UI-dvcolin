@@ -3,9 +3,17 @@
 
     .landing__image {
         height: 55%;
-        background: url(../images/landing.png);
+        background: url(../images/landing.jpg);
         background-size: cover;
-        background-position: 0% 70%;
+        background-position: 0% 20%;
+        position: relative;
+
+        .landing__image-overlay {
+            width: 80%;
+            background: @navy-blue;
+            position: absolute;
+            z-index: 2;
+        }
     }
 
     .landing__description {
