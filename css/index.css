@@ -895,7 +895,7 @@ body {
   display: grid;
   grid-template-columns: 50% 50%;
   grid-template-rows: 25% 75%;
-  grid-template-areas: 'title title' 'text image';
+  grid-template-areas: 'title job' 'text image';
 }
 #about__team .about__title {
   grid-area: title;
@@ -907,11 +907,14 @@ body {
   line-height: 2.2rem;
   font-family: 'lucida_grandebold', sans-serif;
 }
-#about__team .about__title .job-title {
+#about__team .about__job {
+  grid-area: job;
+  font-size: 1.6rem;
   font-style: italic;
-  display: inline-block;
-  margin-left: auto;
-  margin-right: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   font-family: 'lucida_granderegular', sans-serif;
 }
 #about__team .about__text {

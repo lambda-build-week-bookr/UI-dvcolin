@@ -25,7 +25,7 @@
         display: grid;
         grid-template-columns: 50% 50%;
         grid-template-rows: 25% 75%;
-        grid-template-areas: 'title title'
+        grid-template-areas: 'title job'
                              'text image';
     }
 
@@ -35,14 +35,14 @@
         .displayFlex(row, flex-start);
         line-height: 2.2rem;
         font-family: @font-bold;
+    }
 
-        .job-title {
-            font-style: italic;
-            display: inline-block;
-            margin-left: auto;
-            margin-right: 1rem;
-            font-family: @main-font;
-        }
+    .about__job {
+        grid-area: job;
+        font-size: 1.6rem;
+        font-style: italic;
+        .displayFlex();
+        font-family: @main-font;
     }
 
     .about__text {
