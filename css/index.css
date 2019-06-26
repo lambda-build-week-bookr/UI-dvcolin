@@ -31,6 +31,11 @@
   padding: 0 7%;
   line-height: 2.3rem;
 }
+@media (min-width: 600px) {
+  .info-description {
+    font-size: 1rem;
+  }
+}
 @media (min-width: 992px) {
   .info-description {
     font-size: 1.5rem;
@@ -475,10 +480,16 @@ body {
 #features {
   position: relative;
 }
+@media (min-width: 600px) {
+  #features {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
 #features h2 {
   display: none;
 }
-@media (min-width: 992px) {
+@media (min-width: 600px) {
   #features h2 {
     display: block;
     align-self: flex-start;
@@ -495,7 +506,7 @@ body {
     margin: 0 5%;
   }
 }
-@media (min-width: 992px) {
+@media (min-width: 600px) {
   #features .features__container-desktop {
     display: flex;
     flex-direction: row;
@@ -511,6 +522,12 @@ body {
   position: relative;
   perspective: 1;
   border-radius: 5px;
+}
+@media (min-width: 600px) {
+  #features .feature {
+    height: 250px;
+    width: 29%;
+  }
 }
 @media (min-width: 992px) {
   #features .feature {
@@ -534,6 +551,12 @@ body {
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
+}
+@media (min-width: 600px) {
+  #features .feature .feature__heading {
+    font-size: 1.8rem;
+    padding-left: 1.6rem;
+  }
 }
 @media (min-width: 992px) {
   #features .feature .feature__heading {
@@ -571,6 +594,11 @@ body {
   font-family: 'lucida_granderegular', sans-serif;
   padding: 0 7%;
   line-height: 2.3rem;
+}
+@media (min-width: 600px) {
+  #features .feature .feature__description {
+    font-size: 1rem;
+  }
 }
 @media (min-width: 992px) {
   #features .feature .feature__description {
@@ -694,6 +722,11 @@ body {
   font-family: 'lucida_granderegular', sans-serif;
   padding: 0 7%;
   line-height: 2.3rem;
+}
+@media (min-width: 600px) {
+  #signUp-cta {
+    font-size: 1rem;
+  }
 }
 @media (min-width: 992px) {
   #signUp-cta {
