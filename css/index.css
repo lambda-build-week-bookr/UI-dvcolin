@@ -886,18 +886,29 @@ body {
 }
 #about {
   margin: 0 auto;
-  margin-top: 60px;
+  margin-top: 80px;
   width: 85%;
+}
+@media (min-width: 600px) {
+  #about {
+    width: 80%;
+  }
 }
 #about .about__heading {
   font-family: 'lucida_grandebold', sans-serif;
-  font-size: 2rem;
-  padding: 2.5rem 0;
+  font-size: 2.5rem;
+  padding: 2.8rem 0;
+  color: rgba(6, 58, 101, 0.85);
+}
+@media (min-width: 600px) {
+  #about .about__heading {
+    font-size: 3.5rem;
+  }
 }
 #about .about__buttons {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   width: 100%;
   flex-wrap: wrap;
@@ -918,34 +929,74 @@ body {
   border: none;
   border-radius: 5px;
 }
+#about .about__button:hover {
+  cursor: pointer;
+}
 #about #about__team {
   margin-top: 2.5rem;
 }
+@media (min-width: 600px) {
+  #about #about__team {
+    margin-top: 5rem;
+  }
+}
 #about #about__team .about__member {
-  height: 25%;
   position: relative;
   margin: 3rem 0;
 }
 #about #about__team .about__member .about__name {
   font-size: 1.8rem;
 }
+@media (min-width: 600px) {
+  #about #about__team .about__member .about__name {
+    font-size: 2.4rem;
+  }
+}
 #about #about__team .about__member .about__job {
   font-size: 1.5rem;
   font-style: italic;
-  margin: 1.5rem 0;
-  margin-top: 1rem;
+  margin: 1rem 0;
+}
+@media (min-width: 600px) {
+  #about #about__team .about__member .about__job {
+    font-size: 2rem;
+    margin: 1.5rem 0;
+  }
 }
 #about #about__team .about__member .about__personal {
-  height: 90px;
+  height: 100px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
 }
+@media (min-width: 600px) {
+  #about #about__team .about__member .about__personal {
+    height: 130px;
+  }
+}
+@media (min-width: 992px) {
+  #about #about__team .about__member .about__personal {
+    height: 150px;
+  }
+}
 #about #about__team .about__member .about__personal .about__text {
   width: 60%;
   font-size: 1.2rem;
-  line-height: 1.3rem;
+  line-height: 1.6rem;
+}
+@media (min-width: 600px) {
+  #about #about__team .about__member .about__personal .about__text {
+    margin-bottom: 3.5rem;
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+}
+@media (min-width: 992px) {
+  #about #about__team .about__member .about__personal .about__text {
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+  }
 }
 #about #about__team .about__member .about__personal .about__image {
   margin-right: 1rem;
@@ -954,6 +1005,23 @@ body {
   border-radius: 7px;
   background-size: cover;
   background-position: center;
+}
+@media (min-width: 600px) {
+  #about #about__team .about__member .about__personal .about__image {
+    width: 130px;
+    height: 130px;
+    margin: 0 auto;
+    position: absolute;
+    right: 15%;
+    bottom: 25%;
+  }
+}
+@media (min-width: 992px) {
+  #about #about__team .about__member .about__personal .about__image {
+    width: 150px;
+    height: 150px;
+    right: 8%;
+  }
 }
 .nick-img {
   background: url(../images/nick.jpg);

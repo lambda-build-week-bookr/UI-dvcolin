@@ -12,17 +12,26 @@
 }
 #about {
     margin: 0 auto;
-    margin-top: 60px;
+    margin-top: 80px;
     width: 85%;
+
+    @media @tablet {
+        width: 80%;
+    }
 
     .about__heading {
         font-family: @font-bold;
-        font-size: 2rem;
-        padding: 2.5rem 0;
+        font-size: 2.5rem;
+        padding: 2.8rem 0;
+        color: @light-blue;
+
+        @media @tablet {
+            font-size: 3.5rem;
+        }
     }
 
     .about__buttons {
-        .displayFlex(row, space-around);
+        .displayFlex(row, space-between);
         width: 100%;
         flex-wrap: wrap;
     }
@@ -39,35 +48,69 @@
         margin: 1rem 0;
         border: none;
         border-radius: 5px;
+
+        &:hover {
+            cursor: pointer;
+        }
     }
 
     #about__team {
         margin-top: 2.5rem;
 
+        @media @tablet {
+            margin-top: 5rem;
+        }
+
         .about__member {
-            height: 25%;
             position: relative;
             margin: 3rem 0;
 
             .about__name {
                 font-size: 1.8rem;
+
+                @media @tablet {
+                    font-size: 2.4rem;
+                }
             }
 
             .about__job {
                 font-size: 1.5rem;
                 font-style: italic;
-                margin: 1.5rem 0;
-                margin-top: 1rem;
+                margin: 1rem 0;
+
+                @media @tablet {
+                    font-size: 2rem;
+                    margin: 1.5rem 0;
+                }
             }
 
             .about__personal {
-                height: 90px;
+                height: 100px;
                 .displayFlex(row, space-between);
+
+                @media @tablet {
+                    height: 130px;
+                }
+
+                @media @desktop {
+                    height: 150px;
+                }
 
                 .about__text {
                     width: 60%;
                     font-size: 1.2rem;
-                    line-height: 1.3rem;
+                    line-height: 1.6rem;
+
+                    @media @tablet {
+                        margin-bottom: 3.5rem;
+                        font-size: 1.5rem;
+                        line-height: 2rem;
+                    }
+
+                    @media @desktop {
+                        font-size: 1.8rem;
+                        line-height: 2.4rem;
+                    }
                 }
 
                 .about__image {
@@ -77,6 +120,21 @@
                     border-radius: 7px;
                     background-size: cover;
                     background-position: center;
+
+                    @media @tablet {
+                        width: 130px;
+                        height: 130px;
+                        margin: 0 auto;
+                        position: absolute;
+                        right: 15%;
+                        bottom: 25%;
+                    }
+
+                    @media @desktop {
+                        width: 150px;
+                        height: 150px;
+                        right: 8%;
+                    }
                     
                 }
             }
