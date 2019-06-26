@@ -976,3 +976,9 @@ body {
 .arron-img {
   background: url(../images/arron.jpg);
 }
+.active {
+  display: block;
+}
+.hide {
+  display: none;
+}
