@@ -10,94 +10,104 @@
         text-decoration: none;
     }
 }
-
-.about__heading {
-    margin-top: 90px;
-    margin-left: 5%;
-    font-size: 2.7rem;
-}
-
-#about__team {
-    display: grid;
-    width: 85%;
+#about {
     margin: 0 auto;
-    margin-top: 2rem;
-    grid-template-columns: 100%;
-    grid-template-rows: repeat(8, 260px);
-    grid-row-gap: 2.5rem;
+    margin-top: 60px;
+    width: 85%;
 
-    .about__member {
-        display: grid;
-        grid-template-columns: 50% 50%;
-        grid-template-rows: 25% 75%;
-        grid-template-areas: 'title job'
-                             'text image';
-    }
-
-    .about__title {
-        grid-area: title;
-        font-size: 1.6rem;
-        .displayFlex(row, flex-start);
-        line-height: 2.2rem;
+    .about__heading {
         font-family: @font-bold;
+        font-size: 2rem;
+        padding: 2.5rem 0;
     }
 
-    .about__job {
-        grid-area: job;
-        font-size: 1.6rem;
-        font-style: italic;
+    .about__buttons {
+        .displayFlex(row, space-around);
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    .about__button {
+        width: 30%;
+        height: 45px;
+        text-transform: uppercase;
         .displayFlex();
         font-family: @main-font;
+        padding: 0 1rem;
+        color: white;
+        background: @navy-blue;
+        margin: 1rem 0;
+        border: none;
+        border-radius: 5px;
     }
 
-    .about__text {
-        grid-area: text;
-        font-size: 1.2rem;
-        line-height: 1.8rem;
-        padding: 1rem 0;
-        padding-right: 2rem;
-    }
+    #about__team {
+        margin-top: 2.5rem;
 
-    .nick-img {
-        background: url(../images/nick.jpg);
-    }
+        .about__member {
+            height: 25%;
+            position: relative;
+            margin: 3rem 0;
 
-    .colin-img {
-        background: url(../images/colin-devries.jpeg);
-    }
+            .about__name {
+                font-size: 1.8rem;
+            }
 
-    .timui-img {
-        background: url(../images/tim2.jpg);
-    }
+            .about__job {
+                font-size: 1.5rem;
+                font-style: italic;
+                margin: 1.5rem 0;
+                margin-top: 1rem;
+            }
 
-    .yakuana-img {
-        background: url(../images/arron.jpg);
-    }
+            .about__personal {
+                height: 90px;
+                .displayFlex(row, space-between);
 
-    .lauren-img {
-        background: url(../images/lauren.jpg);
-    }
+                .about__text {
+                    width: 60%;
+                    font-size: 1.2rem;
+                    line-height: 1.3rem;
+                }
 
-    .timfe-img {
-        background: url(../images/tim1.jpg);
+                .about__image {
+                    margin-right: 1rem;
+                    height: 90px;
+                    width: 90px;
+                    border-radius: 7px;
+                    background-size: cover;
+                    background-position: center;
+                    
+                }
+            }
+        }
     }
-    
-    .sunil-img {
-        background: url(../images/sunil.png);
-    }
-
-    .arron-img {
-        background: url(../images/arron.jpg);
-    }
-
-    .about__image {
-        grid-area: image;
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-        border-radius: 10px;
-    }
-
 }
 
+.nick-img {
+    background: url(../images/nick.jpg);
+}
 
+.colin-img {
+    background: url(../images/colin-devries.jpeg);
+}
+
+.timui-img {
+    background: url(../images/tim2.jpg);
+}
+
+.lauren-img {
+    background: url(../images/lauren.jpg);
+}
+
+.timfe-img {
+    background: url(../images/tim1.jpg);
+}
+
+.sunil-img {
+    background: url(../images/sunil.png);
+}
+
+.arron-img {
+    background: url(../images/arron.jpg);
+}
