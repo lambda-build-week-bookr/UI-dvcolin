@@ -7,7 +7,7 @@
         @media @desktop {
             display: block;
             align-self: flex-start;
-            margin-bottom: 3.5rem;
+            margin: 3.5rem 0;
             color: @text-light-gray;
         }
     }
@@ -31,10 +31,14 @@
     .feature {
         height: 420px;
         position: relative;
+        perspective: 1;
+        border-radius: 5px;
 
         @media @desktop {
             height: 360px;
             width: 30%;
+            .shadow-drop-center();
+            border-radius: 7px;
         }
 
         .feature__heading {

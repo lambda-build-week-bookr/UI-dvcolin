@@ -4,6 +4,11 @@
     margin: 0 auto;
     font-family: @main-font;
 
+    .section-title {
+        margin: 2.5rem 0;
+        margin-left: 5%;
+    }
+
     .product-reviews__heading {
         width: 90%;
         margin: 0 auto;
@@ -28,13 +33,13 @@
             width: 50%;
             height: 100px;
             margin-left: auto;
-            margin-right: 1.6rem;
             text-align: left;
             border-bottom: 2px solid @text-light-gray;
 
             @media @desktop {
                 text-align: right;
                 .displayFlex(column, flex-end, flex-end);
+                margin-right: 0;
             }
 
             .product-review__image {
@@ -53,7 +58,7 @@
             }
 
             .product-review__subtitle {
-                font-size: 1.6rem;
+                font-size: 1.8rem;
                 margin: 1.6rem 0;
                 color: @text-light-gray;
 
