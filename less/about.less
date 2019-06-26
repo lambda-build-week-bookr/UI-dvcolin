@@ -1,0 +1,98 @@
+.about__navbar {
+    position: fixed;
+    width: 100%;
+    color: white;
+    top: 0;
+    background: @navy-blue;
+}
+
+.about__heading {
+    margin-top: 90px;
+    margin-left: 5%;
+    font-size: 2.5rem;
+}
+
+#about__team {
+    display: grid;
+    width: 85%;
+    margin: 0 auto;
+    margin-top: 2rem;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(8, 260px);
+    grid-row-gap: 2.5rem;
+
+    .about__member {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 25% 75%;
+        grid-template-areas: 'title title'
+                             'text image';
+    }
+
+    .about__title {
+        grid-area: title;
+        font-size: 1.6rem;
+        .displayFlex(row, flex-start);
+        line-height: 2.2rem;
+        font-family: @font-bold;
+
+        .job-title {
+            font-style: italic;
+            display: inline-block;
+            margin-left: auto;
+            margin-right: 1rem;
+            font-family: @main-font;
+        }
+    }
+
+    .about__text {
+        grid-area: text;
+        font-size: 1.2rem;
+        line-height: 1.8rem;
+        padding: 1rem 0;
+        padding-right: 2rem;
+    }
+
+    .nick-img {
+        background: url(../images/nick.jpg);
+    }
+
+    .colin-img {
+        background: url(../images/colin-devries.jpeg);
+    }
+
+    .timui-img {
+        background: url(../images/tim2.jpg);
+    }
+
+    .yakuana-img {
+        background: url(../images/arron.jpg);
+    }
+
+    .lauren-img {
+        background: url(../images/lauren.jpg);
+    }
+
+    .timfe-img {
+        background: url(../images/tim1.jpg);
+    }
+    
+    .sunil-img {
+        background: url(../images/sunil.png);
+    }
+
+    .arron-img {
+        background: url(../images/arron.jpg);
+    }
+
+    .about__image {
+        grid-area: image;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        border-radius: 10px;
+    }
+
+}
+
+
