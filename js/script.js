@@ -18,10 +18,10 @@ class aboutButton {
     select() {
         const allMembers = document.querySelectorAll('.about__member');
         allMembers.forEach(member => member.style.display = 'none');
-
+        const allButtons = document.querySelectorAll('.about__button');
+        allButtons.forEach(button => button.classList.remove('active__button'));
+        this.element.classList.add('active__button');
         this.members.forEach(member => member.active());
-
-
     }
 }
 

@@ -6,16 +6,21 @@
     background: white;
 
     @media @tablet {
-        padding-top: 4rem;
+        padding-top: 2rem;
     }
 
     .footer__icons {
         width: 85%;
         .displayFlex(row, space-between);
+        margin-top: 2rem;
 
         @media @tablet {
             width: 60%;
-            margin-bottom: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        @media @desktop {
+            width: 30%;
         }
 
         i {
@@ -23,7 +28,7 @@
             color: @text-light-gray;
 
             @media @tablet {
-                font-size: 3.5rem;
+                font-size: 4.5rem;
             }
         }
     }

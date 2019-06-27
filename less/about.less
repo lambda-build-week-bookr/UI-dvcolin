@@ -34,6 +34,10 @@
         .displayFlex(row, space-between);
         width: 100%;
         flex-wrap: wrap;
+
+        .active__button {
+            background: @light-blue;
+        }
     }
 
     .about__button {
@@ -62,19 +66,15 @@
         @media @tablet {
             margin-top: 8rem;
         }
+        
 
         .about__member {
             position: relative;
-            margin: 3rem 0;
-            // .displayFlex();
-
-            @media @tablet {
-                margin: 6rem 0;
-            }
+            border-left: 2px solid @orange;
+            padding: 1rem 0;
 
             .about__content {
                 .displayFlex(column, center, flex-start);
-                border-left: 2px solid @orange;
                 padding-left: 2.5rem;
             }
 
@@ -120,6 +120,7 @@
                 border-radius: 50%;
                 background-size: cover;
                 background-position: center;
+                .shadow-drop-center();
 
                 @media @tablet {
                     width: 150px;
@@ -129,8 +130,8 @@
                 }
 
                 @media @desktop {
-                    width: 150px;
-                    height: 150px;
+                    width: 180px;
+                    height: 180px;
                     right: -10%;
                     bottom: -25%;
                 }
@@ -147,14 +148,13 @@
 
                 @media @desktop {
                     width: 80%;
-                    height: 150px;
                     margin-top: 3.5rem;
                 }
 
                 .about__text {
                     width: 60%;
-                    font-size: 1.2rem;
-                    line-height: 1.6rem;
+                    font-size: 1.4rem;
+                    line-height: 1.8rem;
                     width: 100%;
 
                     @media @tablet {
@@ -164,8 +164,8 @@
                     }
 
                     @media @desktop {
-                        font-size: 1.8rem;
-                        line-height: 2.4rem;
+                        font-size: 2rem;
+                        line-height: 2.8rem;
                     }
                 }
 
@@ -173,6 +173,7 @@
         }
     }
 }
+
 
 .nick-img {
     background: url(../images/nick.jpg);
