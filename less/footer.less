@@ -4,16 +4,26 @@
     .displayFlex(column);
     background: white;
 
+    @media @tablet {
+        // .displayFlex();
+    }
+
     .footer__icons {
         width: 85%;
         margin-top: 2rem;
         .displayFlex(row, space-between);
+
+        @media @tablet {
+            width: 60%;
+            margin-bottom: 1rem;
+        }
+
         i {
             font-size: 4rem;
-            color: black;
+            color: @text-light-gray;
 
-            @media @desktop {
-                font-size: 4rem;
+            @media @tablet {
+                font-size: 3.5rem;
             }
         }
     }
