@@ -60,12 +60,35 @@
         margin-top: 2.5rem;
 
         @media @tablet {
-            margin-top: 5rem;
+            margin-top: 8rem;
         }
 
         .about__member {
             position: relative;
             margin: 3rem 0;
+            // .displayFlex();
+
+            .about__content {
+                .displayFlex(column, center, flex-start);
+                border-left: 2px solid @orange;
+                padding-left: 2.5rem;
+            }
+
+            .about__info {
+                padding-bottom: 1.3rem;
+                border-bottom: 2px solid @text-light-gray;
+                width: 100%;
+                position: relative;
+                .displayFlex();
+
+                @media @tablet {
+                    width: 70%;
+                }
+
+                .about__info-text {
+                    margin-right: auto;
+                }
+            }
 
             .about__name {
                 font-size: 1.8rem;
@@ -79,29 +102,58 @@
                 font-size: 1.5rem;
                 font-style: italic;
                 margin: 1rem 0;
+                padding-top: 1rem;
 
                 @media @tablet {
                     font-size: 2rem;
                     margin: 1.5rem 0;
                 }
             }
+            .about__image {
+                height: 90px;
+                width: 90px;
+                margin-right: 1.5rem;
+                border-radius: 50%;
+                background-size: cover;
+                background-position: center;
+
+                @media @tablet {
+                    width: 160px;
+                    height: 160px;
+                    // margin: 0 auto;
+                    // position: absolute;
+                    margin-right: auto;
+                }
+
+                @media @desktop {
+                    width: 150px;
+                    height: 150px;
+                    right: -10%;
+                    bottom: -25%;
+                }
+                
+            }
 
             .about__personal {
                 height: 100px;
-                .displayFlex(row, space-between);
+                .displayFlex(row, flex-start);
+                margin: 2rem 0;
 
                 @media @tablet {
                     height: 130px;
                 }
 
                 @media @desktop {
+                    width: 80%;
                     height: 150px;
+                    margin-top: 3.5rem;
                 }
 
                 .about__text {
                     width: 60%;
                     font-size: 1.2rem;
                     line-height: 1.6rem;
+                    width: 100%;
 
                     @media @tablet {
                         margin-bottom: 3.5rem;
@@ -115,30 +167,6 @@
                     }
                 }
 
-                .about__image {
-                    margin-right: 1rem;
-                    height: 90px;
-                    width: 90px;
-                    border-radius: 7px;
-                    background-size: cover;
-                    background-position: center;
-
-                    @media @tablet {
-                        width: 130px;
-                        height: 130px;
-                        margin: 0 auto;
-                        position: absolute;
-                        right: 15%;
-                        bottom: 25%;
-                    }
-
-                    @media @desktop {
-                        width: 150px;
-                        height: 150px;
-                        right: 8%;
-                    }
-                    
-                }
             }
         }
     }
@@ -170,6 +198,10 @@
 
 .arron-img {
     background: url(../images/arron.jpg);
+}
+
+.yakuana-img {
+    background: url(../images/yakuana.jpg);
 }
 
 .active {

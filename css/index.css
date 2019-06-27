@@ -940,12 +940,38 @@ body {
 }
 @media (min-width: 600px) {
   #about #about__team {
-    margin-top: 5rem;
+    margin-top: 8rem;
   }
 }
 #about #about__team .about__member {
   position: relative;
   margin: 3rem 0;
+}
+#about #about__team .about__member .about__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  border-left: 2px solid #F6950E;
+  padding-left: 2.5rem;
+}
+#about #about__team .about__member .about__info {
+  padding-bottom: 1.3rem;
+  border-bottom: 2px solid rgba(70, 70, 70, 0.9);
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+@media (min-width: 600px) {
+  #about #about__team .about__member .about__info {
+    width: 70%;
+  }
+}
+#about #about__team .about__member .about__info .about__info-text {
+  margin-right: auto;
 }
 #about #about__team .about__member .about__name {
   font-size: 1.8rem;
@@ -959,6 +985,7 @@ body {
   font-size: 1.5rem;
   font-style: italic;
   margin: 1rem 0;
+  padding-top: 1rem;
 }
 @media (min-width: 600px) {
   #about #about__team .about__member .about__job {
@@ -966,12 +993,36 @@ body {
     margin: 1.5rem 0;
   }
 }
+#about #about__team .about__member .about__image {
+  height: 90px;
+  width: 90px;
+  margin-right: 1.5rem;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+}
+@media (min-width: 600px) {
+  #about #about__team .about__member .about__image {
+    width: 160px;
+    height: 160px;
+    margin-right: auto;
+  }
+}
+@media (min-width: 992px) {
+  #about #about__team .about__member .about__image {
+    width: 150px;
+    height: 150px;
+    right: -10%;
+    bottom: -25%;
+  }
+}
 #about #about__team .about__member .about__personal {
   height: 100px;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
+  margin: 2rem 0;
 }
 @media (min-width: 600px) {
   #about #about__team .about__member .about__personal {
@@ -980,13 +1031,16 @@ body {
 }
 @media (min-width: 992px) {
   #about #about__team .about__member .about__personal {
+    width: 80%;
     height: 150px;
+    margin-top: 3.5rem;
   }
 }
 #about #about__team .about__member .about__personal .about__text {
   width: 60%;
   font-size: 1.2rem;
   line-height: 1.6rem;
+  width: 100%;
 }
 @media (min-width: 600px) {
   #about #about__team .about__member .about__personal .about__text {
@@ -999,31 +1053,6 @@ body {
   #about #about__team .about__member .about__personal .about__text {
     font-size: 1.8rem;
     line-height: 2.4rem;
-  }
-}
-#about #about__team .about__member .about__personal .about__image {
-  margin-right: 1rem;
-  height: 90px;
-  width: 90px;
-  border-radius: 7px;
-  background-size: cover;
-  background-position: center;
-}
-@media (min-width: 600px) {
-  #about #about__team .about__member .about__personal .about__image {
-    width: 130px;
-    height: 130px;
-    margin: 0 auto;
-    position: absolute;
-    right: 15%;
-    bottom: 25%;
-  }
-}
-@media (min-width: 992px) {
-  #about #about__team .about__member .about__personal .about__image {
-    width: 150px;
-    height: 150px;
-    right: 8%;
   }
 }
 .nick-img {
@@ -1046,6 +1075,9 @@ body {
 }
 .arron-img {
   background: url(../images/arron.jpg);
+}
+.yakuana-img {
+  background: url(../images/yakuana.jpg);
 }
 .active {
   display: block;
