@@ -22,7 +22,7 @@
   font-size: 1.7rem;
   letter-spacing: 1px;
   text-align: center;
-  background: rgba(6, 58, 101, 0.85);
+  background: #095390;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -40,6 +40,7 @@
 @media (min-width: 992px) {
   .info-description {
     font-size: 1.5rem;
+    line-height: 2.2rem;
   }
 }
 .section-title {
@@ -338,7 +339,7 @@ body {
 }
 @media (min-width: 992px) {
   #landing .landing__image {
-    height: 70%;
+    height: 60%;
     background-position: 0 35%;
   }
 }
@@ -410,7 +411,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 3.2rem 1.6rem;
+  padding: 2.4rem;
   text-align: center;
 }
 @media (min-width: 600px) {
@@ -424,6 +425,7 @@ body {
   #landing .landing__description {
     height: 300px;
     padding: 2.4rem;
+    margin-bottom: 0;
   }
 }
 #landing .landing__description .landing__description-text {
@@ -496,6 +498,11 @@ body {
     align-self: flex-start;
     margin: 3.5rem 0;
     color: rgba(70, 70, 70, 0.9);
+  }
+}
+@media (min-width: 992px) {
+  #features h2 {
+    margin-top: 0;
   }
 }
 @media (min-width: 992px) {
@@ -587,7 +594,7 @@ body {
   font-size: 1.7rem;
   letter-spacing: 1px;
   text-align: center;
-  background: rgba(6, 58, 101, 0.85);
+  background: #095390;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -605,6 +612,7 @@ body {
 @media (min-width: 992px) {
   #features .feature .feature__description {
     font-size: 1.5rem;
+    line-height: 2.2rem;
   }
 }
 #product-reviews {
@@ -712,7 +720,7 @@ body {
   font-size: 1.7rem;
   font-family: 'lucida_granderegular', sans-serif;
   line-height: 2rem;
-  color: rgba(6, 58, 101, 0.85);
+  color: #095390;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -752,7 +760,7 @@ body {
   font-size: 1.7rem;
   letter-spacing: 1px;
   text-align: center;
-  background: rgba(6, 58, 101, 0.85);
+  background: #095390;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -770,6 +778,7 @@ body {
 @media (min-width: 992px) {
   #signUp-cta {
     font-size: 1.5rem;
+    line-height: 2.2rem;
   }
 }
 @media (min-width: 600px) {
@@ -898,7 +907,7 @@ body {
   font-family: 'lucida_grandebold', sans-serif;
   font-size: 2.5rem;
   padding: 2.8rem 0;
-  color: rgba(6, 58, 101, 0.85);
+  color: #095390;
 }
 @media (min-width: 600px) {
   #about .about__heading {
@@ -928,9 +937,11 @@ body {
   margin: 1rem 0;
   border: none;
   border-radius: 5px;
+  transition: background 250ms ease-out;
 }
 #about .about__button:hover {
   cursor: pointer;
+  background: #095390;
 }
 #about #about__team {
   margin-top: 2.5rem;
