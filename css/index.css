@@ -205,6 +205,7 @@ body {
   border: none;
   border-radius: 7px;
   padding: 1.2rem 1.6rem;
+  display: inline-block;
 }
 .cta__button:hover {
   cursor: pointer;
@@ -389,10 +390,19 @@ body {
 #landing .landing__image .cta__button {
   position: absolute;
   bottom: 8%;
-  right: 12%;
+  right: 7%;
   padding: 1rem 1.4rem;
   border-radius: 10px;
   z-index: 50;
+  width: 120px;
+  text-decoration: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+#landing .landing__image .cta__button:hover {
+  cursor: pointer;
 }
 @media (min-width: 600px) {
   #landing .landing__image .cta__button {
@@ -819,6 +829,7 @@ body {
 #footer {
   width: 100%;
   padding: 2.5rem 5%;
+  padding-top: 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -829,7 +840,6 @@ body {
 }
 #footer .footer__icons {
   width: 85%;
-  margin-top: 2rem;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -947,6 +957,11 @@ body {
   position: relative;
   margin: 3rem 0;
 }
+@media (min-width: 600px) {
+  #about #about__team .about__member {
+    margin: 6rem 0;
+  }
+}
 #about #about__team .about__member .about__content {
   display: flex;
   flex-direction: column;
@@ -967,7 +982,7 @@ body {
 }
 @media (min-width: 600px) {
   #about #about__team .about__member .about__info {
-    width: 70%;
+    width: 80%;
   }
 }
 #about #about__team .about__member .about__info .about__info-text {
@@ -978,7 +993,7 @@ body {
 }
 @media (min-width: 600px) {
   #about #about__team .about__member .about__name {
-    font-size: 2.4rem;
+    font-size: 2.8rem;
   }
 }
 #about #about__team .about__member .about__job {
@@ -989,7 +1004,7 @@ body {
 }
 @media (min-width: 600px) {
   #about #about__team .about__member .about__job {
-    font-size: 2rem;
+    font-size: 2.2rem;
     margin: 1.5rem 0;
   }
 }
@@ -1003,9 +1018,10 @@ body {
 }
 @media (min-width: 600px) {
   #about #about__team .about__member .about__image {
-    width: 160px;
-    height: 160px;
+    width: 150px;
+    height: 150px;
     margin-right: auto;
+    margin-bottom: 1.5rem;
   }
 }
 @media (min-width: 992px) {
@@ -1017,7 +1033,6 @@ body {
   }
 }
 #about #about__team .about__member .about__personal {
-  height: 100px;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -1026,7 +1041,7 @@ body {
 }
 @media (min-width: 600px) {
   #about #about__team .about__member .about__personal {
-    height: 130px;
+    margin: 3rem 0;
   }
 }
 @media (min-width: 992px) {
@@ -1045,8 +1060,8 @@ body {
 @media (min-width: 600px) {
   #about #about__team .about__member .about__personal .about__text {
     margin-bottom: 3.5rem;
-    font-size: 1.5rem;
-    line-height: 2rem;
+    font-size: 1.7rem;
+    line-height: 2.4rem;
   }
 }
 @media (min-width: 992px) {

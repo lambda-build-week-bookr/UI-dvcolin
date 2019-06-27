@@ -69,10 +69,17 @@
         .cta__button {
             position: absolute;
             bottom: 8%;
-            right: 12%;
+            right: 7%;
             padding: 1rem 1.4rem;
             border-radius: 10px;
             z-index: 50;
+            width: 120px;
+            text-decoration: none;
+            .displayFlex();
+
+            &:hover {
+                cursor: pointer;
+            }
 
             @media @tablet {
                 left: 2.5rem;

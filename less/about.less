@@ -68,6 +68,10 @@
             margin: 3rem 0;
             // .displayFlex();
 
+            @media @tablet {
+                margin: 6rem 0;
+            }
+
             .about__content {
                 .displayFlex(column, center, flex-start);
                 border-left: 2px solid @orange;
@@ -82,7 +86,7 @@
                 .displayFlex();
 
                 @media @tablet {
-                    width: 70%;
+                    width: 80%;
                 }
 
                 .about__info-text {
@@ -94,7 +98,7 @@
                 font-size: 1.8rem;
 
                 @media @tablet {
-                    font-size: 2.4rem;
+                    font-size: 2.8rem;
                 }
             }
 
@@ -105,7 +109,7 @@
                 padding-top: 1rem;
 
                 @media @tablet {
-                    font-size: 2rem;
+                    font-size: 2.2rem;
                     margin: 1.5rem 0;
                 }
             }
@@ -118,11 +122,10 @@
                 background-position: center;
 
                 @media @tablet {
-                    width: 160px;
-                    height: 160px;
-                    // margin: 0 auto;
-                    // position: absolute;
+                    width: 150px;
+                    height: 150px;
                     margin-right: auto;
+                    margin-bottom: 1.5rem;
                 }
 
                 @media @desktop {
@@ -135,12 +138,11 @@
             }
 
             .about__personal {
-                height: 100px;
                 .displayFlex(row, flex-start);
                 margin: 2rem 0;
 
                 @media @tablet {
-                    height: 130px;
+                    margin: 3rem 0;
                 }
 
                 @media @desktop {
@@ -157,8 +159,8 @@
 
                     @media @tablet {
                         margin-bottom: 3.5rem;
-                        font-size: 1.5rem;
-                        line-height: 2rem;
+                        font-size: 1.7rem;
+                        line-height: 2.4rem;
                     }
 
                     @media @desktop {
