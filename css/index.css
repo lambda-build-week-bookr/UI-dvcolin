@@ -1105,9 +1105,3 @@ body {
 .yakuana-img {
   background: url(../images/yakuana.jpg);
 }
-.active {
-  display: block;
-}
-.hide {
-  display: none;
-}
