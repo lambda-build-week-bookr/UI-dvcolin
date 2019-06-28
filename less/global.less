@@ -1,68 +1,68 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 html {
-    font-size: 62.5%;
-    scroll-behavior: smooth;
+  font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 html,
 body {
-    height: 100%;
-    width: 100%;
-    font-family: 'lucida_granderegular', sans-serif;
+  height: 100%;
+  width: 100%;
+  font-family: "lucida_granderegular", sans-serif;
 }
 
 body {
-    background: @bg-light;
+  background: @bg-light;
 }
 
-
 .cta__button {
-    font-size: 2.2rem;
-    background: @orange;
-    color: white;
-    margin-bottom: 2.5rem;
-    border: none;
-    display: inline-block;
-    border-radius: 10px;
-    transition: background 250ms ease-out;
+  font-size: 2.2rem;
+  background: @orange;
+  color: white;
+  margin-bottom: 2.5rem;
+  border: none;
+  display: inline-block;
+  border-radius: 10px;
+  transition: background 250ms ease-out;
 
-    &:hover {
-        cursor: pointer;
-        background: @orange-dark;
-    }
+  &:hover {
+    cursor: pointer;
+    background: @orange-dark;
+  }
 
-    @media @tablet {
-        font-size: 2.5rem;
-    }
+  @media @tablet {
+    font-size: 2.5rem;
+  }
 }
 
 .separate-90 {
-    height: 90px;
-    .displayFlex(column);
+  height: 90px;
+  .displayFlex(column);
 
-    hr {
-        width: 85%;
-        border-color: @dark-gray;
-    }
+  hr {
+    width: 85%;
+    border-color: @dark-gray;
+  }
 }
 .separate-60 {
-    height: 60px;
-    background: white;
-    width: 100%;
-    .displayFlex(column);
+  height: 60px;
+  background: white;
+  width: 100%;
+  .displayFlex(column);
 
-    hr {
-        width: 85%;
-        border-color: @dark-gray;
-    }
+  hr {
+    width: 85%;
+    border-color: @dark-gray;
+  }
 }
 
 .shadow-drop-center {
-	-webkit-animation: shadow-drop-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-	        animation: shadow-drop-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  -webkit-animation: shadow-drop-center 0.4s
+    cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: shadow-drop-center 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
 /* ----------------------------------------------
@@ -75,20 +75,19 @@ body {
  * animation shadow-drop-center
  * ----------------------------------------
  */
- @-webkit-keyframes shadow-drop-center {
-    0% {
-      box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
-    }
-    100% {
-      box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
-    }
+@-webkit-keyframes shadow-drop-center {
+  0% {
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
   }
-  @keyframes shadow-drop-center {
-    0% {
-      box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
-    }
-    100% {
-      box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
-    }
+  100% {
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
   }
-  
+}
+@keyframes shadow-drop-center {
+  0% {
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+  }
+  100% {
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+  }
+}

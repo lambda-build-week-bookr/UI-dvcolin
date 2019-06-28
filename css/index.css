@@ -6,18 +6,34 @@
   src: local('Varela Round Regular'), local('VarelaRound-Regular'), url(https://fonts.gstatic.com/s/varelaround/v11/w8gdH283Tvk__Lua32TysjIfp8uK.ttf) format('truetype');
 }
 @font-face {
-  font-family: 'lucida_granderegular';
-  src: url('../fonts/lucida-grande/lucidagrande-webfont.woff2') format('woff2'), url('../fonts/lucida-grande/lucidagrande-webfont.woff') format('woff');
+  font-family: "lucida_granderegular";
+  src: url("../fonts/lucida-grande/lucidagrande-webfont.woff2") format("woff2"), url("../fonts/lucida-grande/lucidagrande-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
-  font-family: 'lucida_grandebold';
-  src: url('../fonts/lucida-grande/lucidagrandebold-webfont.woff2') format('woff2'), url('../fonts/lucida-grande/lucidagrandebold-webfont.woff') format('woff');
+  font-family: "lucida_grandebold";
+  src: url("../fonts/lucida-grande/lucidagrandebold-webfont.woff2") format("woff2"), url("../fonts/lucida-grande/lucidagrandebold-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
-.info-description {
+@font-face {
+  font-family: "CharterBoldBT";
+  src: url(../fonts/charter-bold/CharterBoldBT.ttf) format("ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+.section-title {
+  font-size: 2rem;
+  font-family: "lucida_grandebold", sans-serif;
+  color: #464646;
+}
+@media (min-width: 992px) {
+  .section-title {
+    font-size: 3.4rem;
+  }
+}
+.description-text {
   color: white;
   font-size: 1.7rem;
   letter-spacing: 1px;
@@ -27,30 +43,20 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-family: 'lucida_granderegular', sans-serif;
+  font-family: "lucida_granderegular", sans-serif;
   padding: 0 7%;
   line-height: 2.3rem;
 }
 @media (min-width: 600px) {
-  .info-description {
+  .description-text {
     font-size: 1.1rem;
     line-height: 1.6rem;
   }
 }
 @media (min-width: 992px) {
-  .info-description {
+  .description-text {
     font-size: 1.5rem;
     line-height: 2.2rem;
-  }
-}
-.section-title {
-  font-size: 2rem;
-  font-family: 'lucida_grandebold', sans-serif;
-  color: #464646;
-}
-@media (min-width: 992px) {
-  .section-title {
-    font-size: 3.4rem;
   }
 }
 .navStyle {
@@ -62,7 +68,7 @@
   justify-content: flex-end;
   align-items: center;
   color: white;
-  font-family: 'lucida_granderegular', sans-serif;
+  font-family: "lucida_granderegular", sans-serif;
   z-index: 100;
 }
 @media (min-width: 992px) {
@@ -75,6 +81,10 @@
   margin-right: auto;
   font-size: 2.6rem;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.6);
+  color: white;
+  text-decoration: none;
+  font-family: "CharterBoldBT", sans-serif;
+  letter-spacing: 1px;
 }
 @media (min-width: 992px) {
   .navStyle .navbar__logo {
@@ -98,6 +108,7 @@
   text-decoration: none;
   color: white;
   transition: color 250ms ease-out;
+  padding: 0.8rem;
 }
 .navStyle .navbar__links .navbar__link:hover {
   color: #a5bedf;
@@ -228,7 +239,7 @@ blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-  content: '';
+  content: "";
   content: none;
 }
 table {
@@ -246,7 +257,7 @@ html,
 body {
   height: 100%;
   width: 100%;
-  font-family: 'lucida_granderegular', sans-serif;
+  font-family: "lucida_granderegular", sans-serif;
 }
 body {
   background: #fff8f3;
@@ -332,10 +343,10 @@ body {
   justify-content: flex-end;
   align-items: center;
   color: white;
-  font-family: 'lucida_granderegular', sans-serif;
+  font-family: "lucida_granderegular", sans-serif;
+  z-index: 100;
   background-image: linear-gradient(rgba(6, 58, 101, 0.9), rgba(0, 0, 0, 0));
   position: absolute;
-  z-index: 100;
   top: 0;
   left: 0;
 }
@@ -349,6 +360,10 @@ body {
   margin-right: auto;
   font-size: 2.6rem;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.6);
+  color: white;
+  text-decoration: none;
+  font-family: "CharterBoldBT", sans-serif;
+  letter-spacing: 1px;
 }
 @media (min-width: 992px) {
   .navbar .navbar__logo {
@@ -372,6 +387,7 @@ body {
   text-decoration: none;
   color: white;
   transition: color 250ms ease-out;
+  padding: 0.8rem;
 }
 .navbar .navbar__links .navbar__link:hover {
   color: #a5bedf;
@@ -435,7 +451,7 @@ body {
 #landing .landing__image .landing__image-text .landing__image-heading {
   font-size: 2.9rem;
   line-height: 3.5rem;
-  font-family: 'lucida_grandebold', sans-serif;
+  font-family: "lucida_grandebold", sans-serif;
 }
 @media (min-width: 992px) {
   #landing .landing__image .landing__image-text .landing__image-heading {
@@ -528,7 +544,7 @@ body {
 }
 #landing .landing__description .landing__description-text .landing__description-heading {
   line-height: 3.5rem;
-  font-family: 'lucida_grandebold', sans-serif;
+  font-family: "lucida_grandebold", sans-serif;
   font-weight: 600;
   color: rgba(70, 70, 70, 0.9);
   font-size: 2.1rem;
@@ -632,7 +648,7 @@ body {
   position: absolute;
   padding-left: 1.5rem;
   font-size: 2.8rem;
-  font-family: 'lucida_grandebold', sans-serif;
+  font-family: "lucida_grandebold", sans-serif;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -677,7 +693,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-family: 'lucida_granderegular', sans-serif;
+  font-family: "lucida_granderegular", sans-serif;
   padding: 0 7%;
   line-height: 2.3rem;
 }
@@ -697,7 +713,7 @@ body {
   position: relative;
   width: 100%;
   margin: 0 auto;
-  font-family: 'lucida_granderegular', sans-serif;
+  font-family: "lucida_granderegular", sans-serif;
 }
 @media (min-width: 600px) {
   #product-reviews {
@@ -797,7 +813,7 @@ body {
   height: 60%;
   padding: 1.5rem;
   font-size: 1.7rem;
-  font-family: 'lucida_granderegular', sans-serif;
+  font-family: "lucida_granderegular", sans-serif;
   line-height: 2rem;
   color: #37619b;
   display: flex;
@@ -845,7 +861,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-family: 'lucida_granderegular', sans-serif;
+  font-family: "lucida_granderegular", sans-serif;
   padding: 0 7%;
   line-height: 2.3rem;
 }
@@ -967,6 +983,10 @@ body {
   text-decoration: none;
   color: rgba(70, 70, 70, 0.9);
   margin: 0.75rem 0;
+  transition: color 250ms ease-out;
+}
+#footer .footer__info .footer__info-links a:hover {
+  color: #37619b;
 }
 .about__navbar {
   display: none;
@@ -976,13 +996,13 @@ body {
   flex-direction: row;
   justify-content: flex-end;
   align-items: center;
-  font-family: 'lucida_granderegular', sans-serif;
+  font-family: "lucida_granderegular", sans-serif;
   z-index: 100;
   position: fixed;
   width: 100%;
   color: white;
   top: 0;
-  background: #063A65;
+  background: #063a65;
 }
 @media (min-width: 992px) {
   .about__navbar {
@@ -994,6 +1014,10 @@ body {
   margin-right: auto;
   font-size: 2.6rem;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.6);
+  color: white;
+  text-decoration: none;
+  font-family: "CharterBoldBT", sans-serif;
+  letter-spacing: 1px;
 }
 @media (min-width: 992px) {
   .about__navbar .navbar__logo {
@@ -1017,6 +1041,7 @@ body {
   text-decoration: none;
   color: white;
   transition: color 250ms ease-out;
+  padding: 0.8rem;
 }
 .about__navbar .navbar__links .navbar__link:hover {
   color: #a5bedf;
@@ -1091,6 +1116,25 @@ body {
 .toggle-mobileNav {
   transform: translateY(0);
 }
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 20;
+  background: none;
+  transition: background 400ms ease-out;
+}
+@media (min-width: 600px) {
+  .overlay {
+    display: none;
+  }
+}
+.darken-overlay {
+  background: rgba(0, 0, 0, 0.5);
+}
 #about {
   margin: 0 auto;
   margin-top: 80px;
@@ -1102,7 +1146,7 @@ body {
   }
 }
 #about .about__heading {
-  font-family: 'lucida_grandebold', sans-serif;
+  font-family: "lucida_grandebold", sans-serif;
   font-size: 2.5rem;
   padding: 2.8rem 0;
   color: #37619b;
@@ -1131,10 +1175,10 @@ body {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  font-family: 'lucida_granderegular', sans-serif;
+  font-family: "lucida_granderegular", sans-serif;
   padding: 0 1rem;
   color: white;
-  background: #063A65;
+  background: #063a65;
   margin: 1rem 0;
   border: none;
   border-radius: 5px;
@@ -1143,6 +1187,9 @@ body {
 #about .about__button:hover {
   cursor: pointer;
   background: #37619b;
+}
+#about .about__button:focus {
+  outline: none;
 }
 #about #about__team {
   margin-top: 2.5rem;
@@ -1264,6 +1311,9 @@ body {
     line-height: 2.8rem;
     margin-bottom: 3.5rem;
   }
+}
+.show-content {
+  display: block;
 }
 .nick-img {
   background: url(../images/nick.jpg);

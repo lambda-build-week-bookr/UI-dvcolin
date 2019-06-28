@@ -1,63 +1,67 @@
 #footer {
-    width: 100%;
-    padding: 2.5rem 5%;
-    padding-top: 0;
-    .displayFlex(column);
-    background: white;
+  width: 100%;
+  padding: 2.5rem 5%;
+  padding-top: 0;
+  .displayFlex(column);
+  background: white;
+
+  @media @tablet {
+    padding-top: 2rem;
+  }
+
+  .footer__icons {
+    width: 85%;
+    .displayFlex(row, space-between);
+    margin-top: 2rem;
 
     @media @tablet {
-        padding-top: 2rem;
+      width: 60%;
+      margin-bottom: 2rem;
     }
 
-    .footer__icons {
-        width: 85%;
-        .displayFlex(row, space-between);
-        margin-top: 2rem;
-
-        @media @tablet {
-            width: 60%;
-            margin-bottom: 2rem;
-        }
-
-        @media @desktop {
-            width: 30%;
-        }
-
-        i {
-            font-size: 4rem;
-            color: @text-light-gray;
-            transition: @link-transition;
-
-            &:hover {
-                color: @light-blue;
-            }
-
-            @media @tablet {
-                font-size: 4.5rem;
-            }
-        }
+    @media @desktop {
+      width: 30%;
     }
 
-    .footer__copyright {
-        margin-bottom: auto;
-        margin-top: 0.75rem;
+    i {
+      font-size: 4rem;
+      color: @text-light-gray;
+      transition: @link-transition;
+
+      &:hover {
+        color: @light-blue;
+      }
+
+      @media @tablet {
+        font-size: 4.5rem;
+      }
     }
+  }
 
-    .footer__info {
-        width: 100%;
-        .displayFlex(row, space-between);
-        font-size: 1.9rem;
+  .footer__copyright {
+    margin-bottom: auto;
+    margin-top: 0.75rem;
+  }
 
-        .footer__info-links {
-            .displayFlex(column);
-            font-size: 1.6rem;
+  .footer__info {
+    width: 100%;
+    .displayFlex(row, space-between);
+    font-size: 1.9rem;
 
-            a {
-                text-decoration: none;
-                color: @text-light-gray;
-                margin: 0.75rem 0;
-            }
+    .footer__info-links {
+      .displayFlex(column);
+      font-size: 1.6rem;
+
+      a {
+        text-decoration: none;
+        color: @text-light-gray;
+        margin: 0.75rem 0;
+        transition: @link-transition;
+
+        &:hover {
+          color: @light-blue;
         }
+      }
     }
-
+  }
 }

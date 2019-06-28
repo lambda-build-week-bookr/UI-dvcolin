@@ -1,159 +1,158 @@
 #landing {
-    height: 97%;
+  height: 97%;
+
+  @media @tablet {
+    height: auto;
+  }
+
+  @media @desktop {
+    height: 980px;
+  }
+
+  .landing__image {
+    height: 55%;
+    background: url(../images/Ladyinblue1.jpg);
+    background-size: cover;
+    background-position: bottom;
+    position: relative;
 
     @media @tablet {
-        height: auto;
+      height: 500px;
+      background-position: center;
+    }
+    @media @desktop {
+      height: 60%;
+      background-position: 0 35%;
+    }
+
+    .landing__image-text {
+      position: absolute;
+      top: 40%;
+      left: 4%;
+      color: white;
+      width: 50%;
+      text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.6);
+
+      @media @tablet {
+        width: 27%;
+      }
+
+      @media @desktop {
+        width: 30%;
+        left: 2%;
+      }
+
+      .landing__image-heading {
+        font-size: 2.9rem;
+        line-height: 3.5rem;
+        font-family: @font-bold;
+
+        @media @desktop {
+          font-size: 4.3rem;
+          line-height: 5rem;
+        }
+      }
+
+      .landing__image-subtitle {
+        font-size: 1.7rem;
+        line-height: 2.2rem;
+        margin-top: 1.5rem;
+
+        @media @desktop {
+          font-size: 2.2rem;
+          line-height: 2.8rem;
+        }
+      }
+    }
+
+    .cta__button {
+      position: absolute;
+      bottom: 8%;
+      right: 7%;
+      padding: 1rem 1.4rem;
+      z-index: 50;
+      width: 120px;
+      text-decoration: none;
+      .displayFlex();
+
+      &:hover {
+        cursor: pointer;
+      }
+
+      @media @tablet {
+        left: 2.5rem;
+        bottom: 13%;
+        padding: 1.2rem 3.2rem;
+        width: 180px;
+      }
+    }
+  }
+
+  .landing__description {
+    height: 45%;
+    padding: 1.6rem;
+    text-align: center;
+    .displayFlex(column);
+
+    @media @tablet {
+      .displayFlex(column);
+      height: 220px;
+      margin: 3.6rem 0;
+      padding: 0;
     }
 
     @media @desktop {
-        height: 980px;
+      height: 300px;
+      padding: 2.4rem;
+      margin-bottom: 0;
     }
 
-    .landing__image {
-        height: 55%;
-        background: url(../images/Ladyinblue1.jpg);
-        background-size: cover;
-        background-position: bottom;
-        position: relative;
+    .landing__description-text {
+      height: 220px;
+      .displayFlex(column, space-around);
+      border-top: 1px solid black;
+      border-bottom: 1px solid black;
+      padding-top: 2rem;
 
-        @media @tablet {
-            height: 500px;
-            background-position: center;
-        }
+      @media @tablet {
+        width: 60%;
+        padding: 2rem 0;
+      }
+
+      @media @desktop {
+        width: 70%;
+      }
+
+      .landing__description-heading {
+        line-height: 3.5rem;
+        font-family: @font-bold;
+        font-weight: 600;
+        color: @text-light-gray;
+        font-size: 2.1rem;
+
         @media @desktop {
-            height: 60%;
-            background-position: 0 35%;
+          width: 90%;
+          line-height: 5rem;
         }
+      }
 
-        .landing__image-text {
-            position: absolute;
-            top: 40%;
-            left: 4%;
-            color: white;
-            width: 50%;
-            text-shadow: 0px 4px 4px rgba(0,0,0,0.6);
-
-            @media @tablet {
-                width: 27%;
-            }
-
-            @media @desktop {
-                width: 30%;
-                left: 2%;
-            }
-            
-
-            .landing__image-heading {
-                font-size: 2.9rem;
-                line-height: 3.5rem;
-                font-family: @font-bold;
-
-                @media @desktop {
-                    font-size: 4.3rem;
-                    line-height: 5rem;
-                }
-            }
-
-            .landing__image-subtitle {
-                font-size: 1.7rem;
-                line-height: 2.2rem;
-                margin-top: 1.5rem;
-
-                @media @desktop {
-                    font-size: 2.2rem;
-                    line-height: 2.8rem;
-                }
-            }
-        }
-
-        .cta__button {
-            position: absolute;
-            bottom: 8%;
-            right: 7%;
-            padding: 1rem 1.4rem;
-            z-index: 50;
-            width: 120px;
-            text-decoration: none;
-            .displayFlex();
-
-            &:hover {
-                cursor: pointer;
-            }
-
-            @media @tablet {
-                left: 2.5rem;
-                bottom: 13%;
-                padding: 1.2rem 3.2rem;
-                width: 180px;
-            }
-        }
-    }
-
-    .landing__description {
-        height: 45%;
-        padding: 1.6rem;
-        text-align: center;
-        .displayFlex(column);
+      .landing__description-p {
+        font-size: 1.8rem;
+        line-height: 2.5rem;
+        padding: 0 2.4rem;
+        margin: 2rem 0;
+        color: black;
 
         @media @tablet {
-            .displayFlex(column);
-            height: 220px;
-            margin: 3.6rem 0;
-            padding: 0;
+          margin-bottom: 0;
         }
 
         @media @desktop {
-            height: 300px;
-            padding: 2.4rem;
-            margin-bottom: 0;
+          font-size: 2.5rem;
+          width: 90%;
+          line-height: 3.2rem;
         }
-
-        .landing__description-text {
-            height: 220px;
-            .displayFlex(column, space-around);
-            border-top: 1px solid black;
-            border-bottom: 1px solid black;
-            padding-top: 2rem;
-
-            @media @tablet {
-                width: 60%;
-                padding: 2rem 0;
-            }
-
-            @media @desktop {
-                width: 70%;
-            }
-            
-            .landing__description-heading {
-                line-height: 3.5rem;
-                font-family: @font-bold;
-                font-weight: 600;
-                color: @text-light-gray;
-                font-size: 2.1rem;
-
-                @media @desktop {
-                    width: 90%;
-                    line-height: 5rem;
-                }
-            }
-
-            .landing__description-p {
-                font-size: 1.8rem;
-                line-height: 2.5rem;
-                padding: 0 2.4rem;
-                margin: 2rem 0;
-                color: black;
-
-                @media @tablet {
-                    margin-bottom: 0;
-                }
-
-                @media @desktop {
-                    font-size: 2.5rem;
-                    width: 90%;
-                    line-height: 3.2rem;
-                }
-            }
-        }
+      }
     }
+  }
 }

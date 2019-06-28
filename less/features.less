@@ -1,102 +1,104 @@
 #features {
-    position: relative;
+  position: relative;
+
+  @media @tablet {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  h2 {
+    display: none;
 
     @media @tablet {
-        width: 90%;
-        margin: 0 auto;
-    }
-
-    h2 {
-        display: none;
-
-        @media @tablet {
-            display: block;
-            align-self: flex-start;
-            margin: 3.5rem 0;
-            color: @text-light-gray;
-        }
-
-        @media @desktop {
-            margin-top: 0;
-        }
+      display: block;
+      align-self: flex-start;
+      margin: 3.5rem 0;
+      color: @text-light-gray;
     }
 
     @media @desktop {
-        .displayFlex(column, flex-start);
-        margin: 0 5%;
+      margin-top: 0;
+    }
+  }
+
+  @media @desktop {
+    .displayFlex(column, flex-start);
+    margin: 0 5%;
+  }
+
+  .features__container-desktop {
+    @media @tablet {
+      .displayFlex(row, space-between);
+      width: 100%;
+      height: 60%;
+      margin-bottom: 1.5rem;
+    }
+  }
+
+  .feature {
+    height: 420px;
+    position: relative;
+    perspective: 1;
+    border-radius: 5px;
+
+    @media @tablet {
+      height: 250px;
+      width: 29%;
     }
 
-    .features__container-desktop {
-
-        @media @tablet {
-            .displayFlex(row, space-between);
-            width: 100%;
-            height: 60%;
-            margin-bottom: 1.5rem;
-        }
+    @media @desktop {
+      height: 360px;
+      width: 30%;
+      .shadow-drop-center();
+      border-radius: 7px;
     }
 
-    .feature {
-        height: 420px;
-        position: relative;
-        perspective: 1;
-        border-radius: 5px;
+    .feature__heading {
+      background-image: linear-gradient(
+        rgba(6, 58, 101, 0.9),
+        rgba(0, 0, 0, 0)
+      );
+      color: white;
+      height: 13%;
+      width: 100%;
+      position: absolute;
+      padding-left: 1.5rem;
+      font-size: 2.8rem;
+      font-family: @font-bold;
+      .displayFlex(row, flex-start);
 
-        @media @tablet {
-            height: 250px;
-            width: 29%;
-        }
+      @media @tablet {
+        font-size: 1.8rem;
+        padding-left: 1.6rem;
+      }
 
-        @media @desktop {
-            height: 360px;
-            width: 30%;
-            .shadow-drop-center();
-            border-radius: 7px;
-        }
-
-        .feature__heading {
-            background-image: linear-gradient(rgba(6, 58, 101, 0.9), rgba(0, 0, 0, 0.0));
-            color: white;
-            height: 13%;
-            width: 100%;
-            position: absolute;
-            padding-left: 1.5rem;
-            font-size: 2.8rem;
-            font-family: @font-bold;
-            .displayFlex(row, flex-start);
-
-            @media @tablet {
-                font-size: 1.8rem;
-                padding-left: 1.6rem;
-            }
-
-            @media @desktop {
-                font-size: 2.5rem;
-            }
-        }
-
-        .feature__img {
-            height: 63%;
-        }
-
-        .read-img {
-            background: url(../images/read.jpg);
-            background-size: cover;
-        }
-        .write-img {
-            background: url(../images/write.jpg);
-            background-size: cover;
-            background-position: center;
-        }
-        .connect-img {
-            background: url(../images/connect.jpg);
-            background-size: cover;
-            background-position: center;
-        }
-
-        .feature__description {
-            height: 37%;
-           .info-description();
-        }
+      @media @desktop {
+        font-size: 2.5rem;
+      }
     }
+
+    .feature__img {
+      height: 63%;
+    }
+
+    .read-img {
+      background: url(../images/read.jpg);
+      background-size: cover;
+    }
+    .write-img {
+      background: url(../images/write.jpg);
+      background-size: cover;
+      background-position: center;
+    }
+    .connect-img {
+      background: url(../images/connect.jpg);
+      background-size: cover;
+      background-position: center;
+    }
+
+    .feature__description {
+      height: 37%;
+      .description-text();
+    }
+  }
 }

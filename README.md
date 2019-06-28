@@ -12,7 +12,7 @@ Using LESS, I created several variables and mixins, and was able to better organ
 
 ## JavaScript ##
 
-Using JavaScript, I created reusable components on the "About" page. With event listeners and data attributes, I created buttons that filter group members based on their role in the project.
+Using JavaScript, I created reusable components on the "About" page. With event listeners and data attributes, I created buttons that filter group members based on their role in the project. In addition, I created a mobile navbar for the about page that drops down when the hamburger icon is clicked.
 
 
 ## Marketing Page ##
@@ -21,7 +21,7 @@ Marketing page was created based on UX designer's layout. I incorporated chosen 
 
 ## About Page ##
 
-Created my own design based on the marketing page, describing all of our team members and their roles in the project. Incorporated JS components into tabs that filter team members based on their role. 
+Created my own design based on the marketing page, describing all of our team members and their roles in the project. Incorporated JS components into tabs that filter team members based on their role. I also added a mobile navbar that drops down when the hamburger icon is clicked.
 
 ## Project Details ##
 
