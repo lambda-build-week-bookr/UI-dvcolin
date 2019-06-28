@@ -1,3 +1,13 @@
+const toggleNav = document.querySelector('.mobileNav__toggle');
+
+toggleNav.addEventListener('click', function() {
+    const mobileNav = document.querySelector('.navbar__links-mobile');
+    mobileNav.classList.toggle('toggle-mobileNav');
+});
+
+
+
+
 class aboutButton {
     constructor(element) {
         this.element = element;

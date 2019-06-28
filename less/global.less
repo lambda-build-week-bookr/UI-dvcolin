@@ -27,9 +27,11 @@ body {
     border: none;
     display: inline-block;
     border-radius: 10px;
+    transition: background 250ms ease-out;
 
     &:hover {
         cursor: pointer;
+        background: @orange-dark;
     }
 
     @media @tablet {
@@ -37,7 +39,7 @@ body {
     }
 }
 
-.separate {
+.separate-90 {
     height: 90px;
     .displayFlex(column);
 
@@ -50,9 +52,11 @@ body {
     height: 60px;
     background: white;
     width: 100%;
+    .displayFlex(column);
 
-    @media @tablet {
-      
+    hr {
+        width: 85%;
+        border-color: @dark-gray;
     }
 }
 
