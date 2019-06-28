@@ -146,6 +146,10 @@
       border-left: 2px solid @orange;
       padding: 1rem 0;
 
+      @media @tablet {
+        padding: 2rem 0;
+      }
+
       .about__content {
         .displayFlex(column, center, flex-start);
         padding-left: 2.5rem;
@@ -164,6 +168,35 @@
 
         .about__info-text {
           margin-right: auto;
+
+          .social__icons {
+            font-size: 3.5rem;
+            width: 85px;
+            margin-right: 0;
+            margin-top: 2rem;
+            .displayFlex(row, space-between);
+
+            @media @tablet {
+              width: 100px;
+              font-size: 4rem;
+              margin-top: 3rem;
+            }
+
+            @media @desktop {
+              width: 120px;
+              font-size: 4.2rem;
+              margin-top: 4rem;
+            }
+
+            .social__icon {
+              color: @text-light-gray;
+              transition: @link-transition;
+
+              &:hover {
+                color: @light-blue;
+              }
+            }
+          }
         }
       }
 
